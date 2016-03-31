@@ -225,7 +225,7 @@ const DatePicker = React.createClass({
    */
   openDialog() {
     this.setState({
-      dialogDate: this.getDate(),
+      dialogDate: this.getDate() || undefined,
     }, this.refs.dialogWindow.show);
   },
 
